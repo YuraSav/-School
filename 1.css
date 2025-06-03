@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Consolas";
+    src: url(consolas.ttf);
+}
+
+:root {
+    --textColor: white;
+    --bgColor: rgba(43, 43, 43, 1);
+    --primaryColor: rgba(0, 255, 255, 1);
+    --secondaryColor: rgba(140, 0, 255, 1);
+    --accentColor: rgba(169, 0, 185, 1);
+
+}
+
+*{
+     margin: 0;
+    padding: 0;  
+}
+
+body {
+    font-family: Consolas;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondaryColor);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.article-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+article {
+    margin: 100px 0;
+}
+
+/* Шапка Сайта */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+a:hover{
+    color: var(--primaryColor);
+}
+
+.violet {
+    color: var(--secondaryColor);
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 4px 0px rgba(0, 255, 255, 1);
+
+}
+
+/* Основная часть сайта  */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.banner-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-top>p{
+    font-family: Consolas;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: 20.8vw;
+}
+
+.banner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.button {
+    background: rgba(0, 255, 255, 1);
+    border-radius: 60px;
+    color: var(--bgColor);
+    padding: 32px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+     transition: 1s;
+}
+
+.button:hover{
+    background: rgb(8, 109, 109);
+    transition: 1s;
+    color: var(--textColor);
+}
+/* Блок Преимуществф  */
+
+.properties__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 32px;
+}
+
+.properties__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 255, 255, 0.2);
+    flex-direction: column;
+    gap: 32px;
+    width: 15.6vw;
+    border-radius: 20px;
+}
+
+/* Учителя */
+
+.teachers__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teachers__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 255, 255, 0.2);
+    flex-direction: column;
+    width: 24vw;
+    border-radius: 20px;
+    gap: 16px;
+}
+
+/* .course__list{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 32px;
+} */
+
+.bx-wrapper{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.course__item{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 24vw; */
+    border-radius: 20px;
+    background: linear-gradient(180.13deg, #8C00FF 0.11%, rgba(140, 0, 255, 0.2) 74.71%);
+}
+
+.course__item a{
+    font-family: Consolas;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--bgColor);
+    text-align: center;
+}
+
+.course__description{
+    background-color: var(--textColor);
+     padding: 32px;
+     border-radius: 20px;
+     width: calc(100% - 64px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+     gap: 16px;
+}
+
+.course__info{
+    color: var(--bgColor);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.div__reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(180.13deg, #8C00FF 0.11%, rgba(140, 0, 255, 0.2) 74.71%);
+    gap: 16px;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.block__reviews{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.div__reviews>p{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--accentColor);
+}
+
+.div__reviews>a{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: var(--bgColor);
+}
+
+footer{
+    box-shadow: 3px 4px 14.5px 0px rgba(169, 0, 185, 1);
+    padding: 32px 0;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div__instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div__instagram>p{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* 2 страница саита  */
+
+.article-develop>h3{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+    justify-content: center;
+}
+.article-develop{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.div__develop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.develop__img>img{
+    width: 24.27vw;
+    height: 24.37vw;
+}
+
+.develop__p{
+    width: 54.94vw;
+    height: 32.29vw;
+    padding: 1055 620;
+    background-color: var(--textColor);
+    border-radius: 20px;
+    color: var(--bgColor);
+}
+
+.develop__p>p{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+    padding: 20px;
+}

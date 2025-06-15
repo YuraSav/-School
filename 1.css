@@ -171,6 +171,37 @@ header {
     gap: 32px;
 }
 
+.directions-link{
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: var(--textColor);
+    text-transform: uppercase;
+    position: absolute;
+    transform: scale(0);
+}
+
+#directions{
+    position: relative;
+}
+
+.directions-link1{
+    top: -50px;
+    left: -100px;
+}
+
+.directions-link2{
+    top:-50px ;
+    right:-300px ;
+}
+.directions-link3{
+    bottom: -50px;
+    left: -100px;
+}
+.directions-link4{
+    bottom: -50px;
+    right: -300px;
+}
 .properties__item {
     display: flex;
     justify-content: center;
@@ -267,12 +298,6 @@ header {
     padding: 16px;
 }
 
-.block__reviews{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-
 .div__reviews>p{
     font-family: Arial;
     font-weight: 700;
@@ -317,6 +342,16 @@ footer .container{
 
 /* 2 страница саита  */
 
+.logo__tg{
+    width: 3.33vw;
+    padding-right: 50px;
+}
+
+.transition:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
 .article-develop>h3{
     font-family: Arial;
     font-weight: 700;
@@ -325,12 +360,9 @@ footer .container{
     text-transform: uppercase;
     color: var(--secondaryColor);
     justify-content: center;
+    padding-bottom: 126px;
 }
-.article-develop{
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-}
+
 .div__develop{
     display: flex;
     justify-content: space-between;
@@ -359,4 +391,113 @@ footer .container{
     text-align: justify;
     text-transform: uppercase;
     padding: 20px;
+}
+
+.div__well{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div__h3>h3{
+display: flex;
+}
+
+.well__h4{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.well__p>p{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+.well__p{
+    width: 78vw;
+}
+
+.cart__student{
+    display: flex;
+    flex-direction: column;
+}
+
+.well__p li{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.well__p>ul{
+    padding-left: 50px;
+}
+
+.article-student>h2{
+    padding-bottom: 100px;
+}
+
+.work-student{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding:30px ;
+    background-color: var(--textColor);
+    width: 15.5vw;
+    border-radius: 20px;
+}
+.div__student{
+    border-radius: 20px;
+}
+
+.cart__student>h3{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+}
+
+.cart__student>p{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--bgColor);
+}
+
+.cart__student{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.article-student>h2{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+
+.div__signup{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.68vw;
 }

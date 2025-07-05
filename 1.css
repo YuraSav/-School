@@ -214,6 +214,11 @@ header {
     border-radius: 20px;
 }
 
+#slideup{
+    position: fixed;
+    top: 800px;
+    right: 50px;
+}
 /* Учителя */
 
 .teachers__list {
@@ -256,6 +261,10 @@ header {
     /* width: 24vw; */
     border-radius: 20px;
     background: linear-gradient(180.13deg, #8C00FF 0.11%, rgba(140, 0, 255, 0.2) 74.71%);
+}
+
+.a__item:hover{
+    color: var(--bgColor);
 }
 
 .course__item a{
@@ -501,3 +510,21 @@ display: flex;
     flex-direction: column;
     gap: 4.68vw;
 }
+
+.header__2>.container__2{
+    padding: 0;
+}
+.logo{
+    width: 25vw;
+}
+.logo:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.scale:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+

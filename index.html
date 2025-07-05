@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <header>
+    <header  id="header">
         <div class="container">
-            <a href="index.html"><img class="main-header__logo transition" src="Instagram.svg" alt=""></a>
+            <a href=""><img class="main-header__logo scale" src="Instagram.svg" alt=""></a>
             <nav class="main-header__nav menu">
-                <a href="2.html" class="menu__link" href="#"><span class="violet">#</span>о нас</a>
-                <a class="menu__link" href="#"><span class="violet">#</span>курсы</a>
-                <a class="menu__link" href="#"><span class="violet">#</span>отзывы</a>
-                <a class="menu__link" href="#"><span class="violet">#</span>контакты</a>
+                <a class="menu__link" href="#about"><span class="violet">#</span>о нас</a>
+                <a class="menu__link" href="#course"><span class="violet">#</span>курсы</a>
+                <a class="menu__link" href="#review"><span class="violet">#</span>отзывы</a>
+                <a class="menu__link" href="#contact"><span class="violet">#</span>контакты</a>
             </nav>
     </header>
     <main>
@@ -37,14 +37,14 @@
                     <h2>
                         пробный урок для детей от 8 до 18 лет
                     </h2>
-                    <button class="button">записаться</button>
+                    <button onclick="window.location.href='2.html'" class="button">записаться</button>
                 </div>
             </section>
 
 
             <article class="properties">
                 <h2 class="article-title">почему maincode</h2>
-                <div class="properties__list">
+                <div class="properties__list" id="about">
                     <div class="properties__item" id="directions">
                         <img src="Code Blocks.svg" alt="">
                         <h3>4 направления обучения</h3>
@@ -81,6 +81,7 @@
                     </div>
                 </div>
             </article>
+             <a class="menu__link" href="#header"><img id="slideup" src="SlideUp.png" alt=""></a>
             <article class="teachers">
                 <h2 class="article-title">Наши преподаватели</h2>
                 <div class="teachers__list">
@@ -103,12 +104,12 @@
             </article>
             <article class="courses">
                 <h2 class="article-title"> курсы maincode</h2>
-                <div class="course__list">
+                <div class="course__list" id="course">
                     <div class="course__item">
                         <img src="fantastic-icon.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title"> Фантастический мир</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>10 занятий</span>
@@ -121,7 +122,7 @@
                         <img src="scratch-icon.png  " alt="">
                         <div class="course__description">
                             <h4 class="course-title">Программирование игр на Scratch</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -134,7 +135,7 @@
                         <img src="thunkable.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Мобильные приложения</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -147,7 +148,7 @@
                         <img src="python-juneor.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Python Junior</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -160,7 +161,7 @@
                         <img src="roblox.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Roblox Creators</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -173,7 +174,7 @@
                         <img src="python.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Поколение Python</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -186,7 +187,7 @@
                         <img src="web-desing.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Web design</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -199,7 +200,7 @@
                         <img src="create-web.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Создание сайтов</h4>
-                            <a href="">подробнее</a>
+                            <a href="2.html" class="a__item">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -212,7 +213,7 @@
                         <img src="create-web-pro.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Создание сайтов pro</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="2.html">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -225,7 +226,7 @@
                         <img src="python-pro.png" alt="">
                         <div class="course__description">
                             <h4 class="course-title">Python PRO</h4>
-                            <a href="">подробнее</a>
+                            <a class="a__item" href="">подробнее</a>
                             <div class="course__info">
                                 <img src="time.svg" alt="">
                                 <span>32 занятия</span>
@@ -238,53 +239,53 @@
             </article>
         <article class="article-reviews">
             <h2 class="article-title">отзывы</h2>
-            <div class="block__reviews">
+            <div class="block__reviews" id="review">
                 <div class="div__reviews">
                     <img src="reviews1.svg" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
                 <div class="div__reviews">
                     <img src="reviews2.svg" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
                 <div class="div__reviews">
                     <img src="reviews3.png" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
                 <div class="div__reviews">
                     <img src="reviews1.svg" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
                 <div class="div__reviews">
                     <img src="reviews2.svg" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
                 <div class="div__reviews">
                     <img src="reviews3.png" alt="">
                     <p>Программирование игр на Scratch</p>
-                    <a href="">подробнее о курсе</a>
+                    <a href="2.html">подробнее о курсе</a>
                 </div>
             </div>
         </article>
         </div>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="container">  
-            <img src="Viber.png" alt="">
+            <img class="scale" src="Viber.png" alt="">
             <div class="div__instagram">
-                <img src="Instagram.png" alt="">
+                <img class="scale" src="Instagram.png" alt="">
                 <p>maincode.md</p>
             </div>
             <div class="div__instagram">
-                <img src="Instagram.png" alt="">
+                <img class="scale" src="Instagram.png" alt="">
                 <p>nina_tiras</p>
             </div>
-            <img src="Telegram App.png" alt="">
+            <img class="scale" src="Telegram App.png" alt="">
         </div>
     </footer>
     <script src="script.js"></script>

@@ -320,7 +320,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     text-align: center;
-    color: var(--bgColor);
+    color: var(--textColor);
 }
 
 footer{
@@ -516,15 +516,26 @@ display: flex;
 }
 .logo{
     width: 25vw;
+     transition: transform 1s ease;
 }
 .logo:hover{
     transform: scale(1.2);
-    transition: 1s;
+}
+
+.scale{
+     transition: transform 1s ease;
 }
 
 .scale:hover{
-    transform: scale(1.2);
+    transform: scale(1.2);  
     transition: 1s;
+}
+.banner-top>img{
+    transition: transform 1s ease;
+}
+
+.banner-top>img:hover{
+     transform: scale(1.2);
 }
 
 
